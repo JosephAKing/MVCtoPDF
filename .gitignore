@@ -243,3 +243,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/MVCtoPDF/Scripts/ai.0.15.0-build58334.min.js
+/MVCtoPDF/Scripts/ai.0.15.0-build58334.js

@@ -14,10 +14,17 @@ namespace MVCtoPDF
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "GeneratePDF",
+                url: "{controller}/{action}/{parm}/{parm2}",
+                defaults: new { parm = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{parm}",
+                defaults: new { controller = "Home", action = "Index", parm = UrlParameter.Optional }
+            );
+
         }
     }
 }
